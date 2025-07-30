@@ -58,8 +58,16 @@ su clasificacion general se divide en tres.
    los operadores ternarios son aquellos que evaluan tres valores y que retornan un solo valor.
    - operador condicional.
 ## 4. CONTROLES DE FLUJO.
-
+nuestros progrmas en javascript contienen mas de una sentencia y las sentencias son ejecutadas una a una como si
+fuera una historia, de arriba havia abajo como un camino recto.
+javascript nos permite crear caminos alternativos en nuestros programas dependiendo de una decision a esto se le 
+conoce como caminos o ejecucion condicional, que ejecutara una sentencia u otras teniendo encuenta la condicion
+asi podemos crear multiples caminos u opciones en nuestro programas.
+si tenemos una condicion verdadera se ejecutara una sentencia si tenemos una condicion false se ejecutara otra
+sentencia totalmente distinta.
+**OBSERVACION** la ejecucion condicional rompe el flujo normal de un programa.
 ### 1.CONTROLES DE DECISION(IF-ELSE)
+tarea con sus ejemplos
 ### 2.BLUCLES(FOR)
 ### 3.BLUCLES(WHILE)
 

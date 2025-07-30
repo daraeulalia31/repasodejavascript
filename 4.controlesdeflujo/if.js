@@ -64,3 +64,21 @@ console.log(divi) 15
 // Ejemplo de uso
 const numero = 27;  // Puedes cambiar este número a cualquier otro
 console.log(El número ${numero} en texto es: "${convertirNumeroATexto(numero)}");
+
+// RESOLUCUON DEL DOCNETE
+ let numero=3
+ if (numero==1){
+    comsole.log("uno")
+ }
+ else if (numero==2){
+    console.log("dos")
+ }
+ else if (numero==3){
+    console.log("tres") `tres`
+ }
+ else if (numero==4){
+    console.log("cuatro")
+ }
+ else if (numero==5){
+    console.log("cinco")
+ }
