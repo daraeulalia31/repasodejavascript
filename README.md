@@ -32,10 +32,39 @@ son datos que siempre existiran.
    con clave:valor
    - como esta estructurado en un objeto de javascript.
 ## 2. VARIABLES (enlaces, binding).
+es la tecnica que se usa para poder apuntar a una dirección en memoria y al valor o datos relacionados o que se
+encuentre almacenado en ese momento.
+tenemos dos pasos para crear una variable 
+1. primero declarar la variable/constante.
+2. segundo inicializar la variable/constante.
+**OBSERVACION** para crear una variable primero tenemos que crear el enlace luego darle el nombre de la variable
+/constante: `Keyword`,`let`,`var`,`Keyword` - `const`.
+**RECOMENDACIONES**
+- `let` usar cuando el valor tendraque variar.
+- `const` usar cuando el valor sera el mismo siempre.
+- `var` evitar usar.
+`let`,`var` ambos nos permiten crear variable su unica diferencia es el alcance ambito o `scope`(averigaur)
 ## 3. OPERADORES.
-## 4. FUNCIONES.
-tarea
-## 5. METODOS PAARA TRABAJAR CON DATOS ESTRUCTURADOS
+su clasificacion general se divide en tres.
+1. OPERADORES UNARIOS.
+   Los operadores unarios son aquellos que estan ubicados a la izquierda del valor y que retornan un nuevo valor.
+   - operacion de negacion
+2. OPERADORES BINARIOS.
+   los operadores binarios son aquellos que estan en medio de dos valores y retornan un unico valor.
+   - operaciones aritmeticos.
+   - operadores de compracion.
+   - operadores logicos.
+3. OPERADORES TERNARIOS.
+   los operadores ternarios son aquellos que evaluan tres valores y que retornan un solo valor.
+   - operador condicional.
+## 4. CONTROLES DE FLUJO.
+
+### 1.CONTROLES DE DECISION(IF-ELSE)
+### 2.BLUCLES(FOR)
+### 3.BLUCLES(WHILE)
+
+## 5.FUNCIONES.
+## 7. METODOS PAARA TRABAJAR CON DATOS ESTRUCTURADOS
 ### ACCEDER
 ### MODIFICAR
 ### CREAR 
