@@ -82,3 +82,17 @@ console.log(El número ${numero} en texto es: "${convertirNumeroATexto(numero)}"
  else if (numero==5){
     console.log("cinco")
  }
+ switch (numero) {
+    case 1:
+        console.log("uno")
+        break
+    case 2:
+        console.log("dos")
+        break
+    case 3:
+        console-log("tres")
+        break
+    default:
+        console.log("fuerra de rango") `fuera de rango`
+        break
+ }

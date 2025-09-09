@@ -72,6 +72,14 @@ tarea con sus ejemplos
 ### 3.BLUCLES(WHILE)
 
 ## 5.FUNCIONES.
+la funciones en javascrip son bloques de codigo que se ejecutan de manera independiente, podemos decir tambien que 
+son programas que toman datos como entra y retornan otros datos como salida.
+las funcione son fundamentales para el correcto ordenamiento denuestro codigo ademas que nos permkiten separar de una
+manera mas ordenada muestra logica y evitar repartir el codigo muchas veces.
+### TIPOS DE FUNCIONES:
+#### 1. FUNCIONES POR DECLARACION
+este tipo de funcion es la mas conocida y mas usada su estructura es la siguiente:
+
 ## 7. METODOS PAARA TRABAJAR CON DATOS ESTRUCTURADOS
 ### ACCEDER
 ### MODIFICAR
