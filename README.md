@@ -79,7 +79,26 @@ manera mas ordenada muestra logica y evitar repartir el codigo muchas veces.
 ### TIPOS DE FUNCIONES:
 #### 1. FUNCIONES POR DECLARACION
 este tipo de funcion es la mas conocida y mas usada su estructura es la siguiente:
+### TAREA:
+### FUNCIONES POR EXPRESION:
+Una función por expresión es una función que se define como una expresión y se asigna a una variable. Se utiliza la palabra clave function seguida de los parámetros y el cuerpo de la función.
+const suma = function(a, b) {
+  return a + b;
+};
 
+console.log(suma(2, 3)); // Salida: 5
+### FUNCIONES DE FECHA (ARROW FUNCTION)
+Las funciones de flecha son una forma más concisa de definir funciones en JavaScript. Utilizan la sintaxis => para separar los parámetros del cuerpo de la función.
+const suma = (a, b) => {
+  return a + b;
+};
+
+console.log(suma(2, 3)); // Salida: 5
+Si la función solo tiene una línea de código, puedes omitir las llaves y la palabra clave return:
+const suma = (a, b) => a + b;
+
+console.log(suma(2, 3)); // Salida: 5
+Las funciones de flecha también tienen algunas diferencias en cuanto al contexto de this, que puede ser beneficioso en ciertas situaciones.
 ## 7. METODOS PAARA TRABAJAR CON DATOS ESTRUCTURADOS
 ### ACCEDER
 ### MODIFICAR
