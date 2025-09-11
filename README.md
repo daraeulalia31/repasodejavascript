@@ -79,6 +79,7 @@ manera mas ordenada muestra logica y evitar repartir el codigo muchas veces.
 ### TIPOS DE FUNCIONES:
 #### 1. FUNCIONES POR DECLARACION
 este tipo de funcion es la mas conocida y mas usada su estructura es la siguiente:
+
 ### TAREA:
 ### FUNCIONES POR EXPRESION:
 Una función por expresión es una función que se define como una expresión y se asigna a una variable. Se utiliza la palabra clave function seguida de los parámetros y el cuerpo de la función.
@@ -99,10 +100,59 @@ const suma = (a, b) => a + b;
 
 console.log(suma(2, 3)); // Salida: 5
 Las funciones de flecha también tienen algunas diferencias en cuanto al contexto de this, que puede ser beneficioso en ciertas situaciones.
-## 7. METODOS PAARA TRABAJAR CON DATOS ESTRUCTURADOS
+## 6. METODOS PAARA TRABAJAR CON DATOS ESTRUCTURADOS
+los metodos son funciones que dan funcionalidades extras a los tipos de datos en los cuales se aplican, un metodo es antesedido
+por un tipo de dato y un punto.
+**ejemplo**
+el ejemplo mas claro de un metodo es el `.lengt` - este metodo nos permite o nos retorna la cantidad de caracteres de un string
+o la cantidad de elementos de una lista.
+```js
+"hola".length //4
+[2,5,4,6,7].length //5
+```
+>[!TIP] los metodos en su mayoria solo se aplican a tipo de datos string, listas y objetos, en su gran parte son aplicadospara listas.
+### 6.1 METODOS PARA STRING - CADENAS DE TEXTO
+#### LENGTH
+devuelve la longitud de una cadena
+```js
+let mensaje="hola como estas"
+console.log(mensaje.lenght)
+//retorna -> 15
+```
+#### TOLOWERCASE
+devuelve una cadena en minuscula
+```js
+let texto="hola"
+console.log(texto.tolowercase())
+// retorna -> hola
+```
+#### TOUPPERCASE
+devuelve una  cadena en mayusculas
+```js
+let texto="hola"
+console.log(texto.toUpperCase())
+// retorna -> HOLA
+```
+#### CONCAT 
+combina el texto de dos o mas cadenas
+```js
+let nombre="kcapa"
+let saludo="hola"
+//let concatenado=nombre+saludo
+console.log(saludo.concat(nombre))
+
+let cad1="oh "
+let cad2="me "
+let cad3="vengo"
+console.log(cad1.concat(cad2,cad3))
+//retorna -> oh me vengo
+```
+### 6.2 METODOS PARA LISTA - ARRAYS
 ### ACCEDER
 ### MODIFICAR
 ### CREAR 
 ### INSERTAR
 ### ELIMINAR
 ### ORDENAR 
+### 6.2 METODOS PARA OBJETOS.
+## 7. DOM
