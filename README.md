@@ -147,6 +147,24 @@ let cad3="vengo"
 console.log(cad1.concat(cad2,cad3))
 //retorna -> oh me vengo
 ```
+### TRIM
+este metodo elimina los espacios que existen al inicio o final de una cadena o texto.
+```js
+let texto="   hola"
+let nuevotexto=texto.trim() //hola
+let otrotexto="hola   "
+let nuevoOtrotexto=otrotexto.trim()//hola
+```
+#### SLICE - CORTE
+este metodo nos permite extraer partes de una cadena, especificando sus indices, donde
+comenzar y hasta donde mostrar.
+```js
+let parrafo="hola soy percy"
+//solo quiero que me muestre percy
+parrafo.slice(9)//percy
+parrafo.slice(5,8)//soy
+```
+#### 
 ### 6.2 METODOS PARA LISTA - ARRAYS
 ### ACCEDER
 ### MODIFICAR
