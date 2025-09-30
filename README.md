@@ -161,16 +161,69 @@ comenzar y hasta donde mostrar.
 ```js
 let parrafo="hola soy percy"
 //solo quiero que me muestre percy
-parrafo.slice(9)//percy
-parrafo.slice(5,8)//soy
+let nombre=parrafo.slice(9)//percy
+let soy=parrafo.slice(5,8)//soy
 ```
-#### 
+#### SPLIT
+este metodo retorna una lista basandose en un separador que se le indique.
+```js
+let parrafo="solo se que nada se"
+parrafo.split("")//["solo","se","que","nada","se"]
+let url="google.com/search?=gatitos"
+url.split("=")//["google.com/search?","gatitos"]
+console.log(gatito[1])//gatitos
+let listaFrutas="manzana,tomate,pera,naranja"
+listaFrutas.split(",")
+```
 ### 6.2 METODOS PARA LISTA - ARRAYS
-### ACCEDER
-### MODIFICAR
-### CREAR 
-### INSERTAR
-### ELIMINAR
-### ORDENAR 
-### 6.2 METODOS PARA OBJETOS.
+#### CREAR UNA LISTA 
+```js
+let lista=[]
+```
+#### AGREGA ELEMENTOS AL FINAL DE UNA LISTA
+```js
+lista[0]="manzana"
+```
+#### PUSH
+el metodo `push` agrega elemento al final de una lista
+```js
+let lista=[]
+lista.push("manzana")
+```
+#### UNSHIFT
+el metodo `unshift` agrega elementos al inicio de una lista
+```js
+let amigos=[`rony`,`lisbet`,`josema`]
+amigos.unshift("ronald")
+// retorna[""ronald","rony","lisbet","josema"]
+```
+#### REMOVIENDO ELEMENTOS DE UNA LISTA
+#### POP
+el metodo `pop` al contrario de push extrae el ultimo elemento de una lista.
+#### SHIFT
+el metodo `shift` al contrario de unshift extrae al primer elemento de una lista.
+#### ELIMINA ELEMENTOS DE UNA LISTA
+#### DELETE
+elimina un elemento en base a su indice
+```js
+let texto=["hola","como","","estas"]
+delete texto[2]
+```
+#### SPLICE
+este metodo elimina el elemento en base a su indice y a la cantidad de elementos a eliminar
+```js
+let vocals=['a','e','e',i','o','u']
+vacals.splice(2,1)
+vacals array
+```
+####  COMBINANDO O UNIENDO LISTAS (ARRAYS)
+#### CONCAT
+este metodo crea un nuevo array que contiene los elementos del array original siguiendo por los elemementos de uno o mas array proporcionados.
+```js
+let amigosPrimaria=['alfredo','luis','edgar']
+let amigosSecundaria=['edison','remy','miguel']
+let amigosSuperior=['josue','marion','handy']
+let amigos=amigosPrimaria.concat(amigosSecundaria,amigosSuperior)
+```
+### 6.3 METODOS PARA OBJETOS.
 ## 7. DOM
