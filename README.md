@@ -225,5 +225,56 @@ let amigosSecundaria=['edison','remy','miguel']
 let amigosSuperior=['josue','marion','handy']
 let amigos=amigosPrimaria.concat(amigosSecundaria,amigosSuperior)
 ```
+#### METODOS PARA ITERAR ELEMENTOS
+#### FOREACH
+Este metodo ejecuta una funcion anonima por cada elemento de un array.
+```js
+let numero=[1,2,3,4,5,6]
+numeros,forEach(n=>console.log(n+1))
+```
+### MAP
+este metodo ejecuta una funcion anonima por cada elemento de array, generando una nueva lista.
+```js
+let numeros=[1,2,3,4,5,6]
+let nuevosNumeros.map(n=>{return n+1})
+```
+#### METODOS PARA BUSCAR ELEMENTOS EN UNA LISTA.
+#### INCLUDES
+este metodo busca un valor en especifico y devuelve un valor booleano en caso de encontrar el valor buscado retorna true caso contrario false.
+```js
+let vocales=['a','i','o','u']
+let buscaE=vocales.includes('e')
+// retorna false
+let buscaA=vocales.includes('a')
+// retorna true
+```
+#### FILTER
+este metodo se usa para encontrar elementos dentro de una lista que cumplan con cierta condicion.
+```js
+let numero=[2,4,5,7,8,1,2,6]
+// deseo una lista con los numeros que sean menor a 4
+let nuevosNumeros=numeros.filter(n=>{n<4})
+```
+#### FIND
+Este metodo se usa para encontrar el primer elemento que cumpla con cierta condicion, a diferencia deñ `filter` solo retorna un elemento el que conincida con la condicion.
+```js
+let lisNumeros=[10,11,3,20,5]
+//devolver el numero mayor a 10
+let menorDiez=lisNumero.find(n=>{return n>10})
+console.log(menorDiez)
+// retorna 11 - al primer elemento que coincide con la condicion
+```
 ### 6.3 METODOS PARA OBJETOS.
+#### CREANDO OBJETOS
+```JS
+// objeto de diccionario vacio
+let objeto={}
+```
+#### AGREGANDO ELEMENTOS DE UN OBJETO
+recuerden que el elemento de un objeto esta conformado por `clave`:`valor`
+```js
+objeto["nombre"]="ruth"
+objeto["edad"]=18
+objeto["cui"]=08674523
+```
 ## 7. DOM
