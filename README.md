@@ -277,4 +277,29 @@ objeto["nombre"]="ruth"
 objeto["edad"]=18
 objeto["cui"]=08674523
 ```
-## 7. DOM
+#### ACTUALIZANDO ELEMENTOS DE NUESTRO OBJETO
+para realizar la actualizacion del valor de un elemento tenemos que acceder a travez de su clave y asignarle el nuevo valor.
+**observacion** la clave debe ser la misma a actualizar de no existir creara una nueva
+```js
+objeto["edad"]=20
+```
+#### ELIMINANDO UN ELEMENTO DE NUESTRO OBJETO
+para eliminar un elemento de un objeto hacemos uso de un operador unario `delete`
+```js
+delete objeto.CUI
+```
+## 7. ES6
+### ARROW FUNCTION
+### DESTRUCTURIN
+este es una tecnica para el desempaquetado de lista o objetos en variables, esta tecnica facilita el acceso a los elementos de una lista u objetos.
+```js
+let alumno={
+  "nombre":"miguel"
+  "edad":"17"
+}
+console.log(alumno.nombre)
+console.log(alumno("edad"))
+//destructuracion
+let {nombre,edad}=alumno
+```
+## 8. DOM
