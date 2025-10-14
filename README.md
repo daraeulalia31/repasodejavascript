@@ -303,3 +303,127 @@ console.log(alumno("edad"))
 let {nombre,edad}=alumno
 ```
 ## 8. DOM
+- segun sus siglas es modelo de objeto de documento.
+- para la web es una API del navegador, eso significa que nos proporciona una interfaz para comunicarnos entre html y javascript.
+- segun su funcionalidad DOM es el encargado de convertir documentos `html` y `css` en objetivos de `javascript` el `DOM` es un objeto con el que podemos leer y modificar a nuestro antojo.
+
+la manera como `DOM` nos permite interactuar con nuestro documento `html` y `css` son a travez de `selectores`.
+
+### SELECTORES
+Es la manera de como podremos manipular el `DOM`, este es el primer paso que debemos dominar para realizar operaciones de lectura o modificaciones.
+### CAPTURA DE ELEMENTOS
+### SELECTORES TRADICIONALES
+estos selectores son metodos del documento, por que `DOM` trabaja con el documento.
+```js
+// <sec id="mi_div></section>
+document.getElementById("mi_div")
+// retornar un elemento
+
+//-- selectores por su atributo name
+//<input nome="dni" volue="34556>
+// dni="34556"
+document.getElementByName("dni")
+// todos los elementos
+// --selectores por su etiqueta tag
+// <h1></h1>
+document.getElementByTagName("h1")
+// --selectores por su class
+//<div class=rojo></div>
+```
+>[!tip] en la programacion web `DAW` se hace el uso de dos tecnicas, 1, obtencion de datos (get), 2, creacion de datos (set).
+#### SELECTORES MODERNOS
+```js
+//para la captura de un elemento , o el primer elemeto que coincida con la busqueda
+document.querySelector()
+//busca y obtiene el elemento que coincida con el nombre de la clase
+document.querySelector(".nombre_clase")
+//busca y obtiene el elemento que coincida con el nombre de la etiqueta
+document.querySelector("#nombre_id")
+//busca y obtiene el elemento que coincida con el nombre de la etiqueta
+document.querySelector("p")
+document.querySelector(".input[name="dni"]")
+// para acceder a todas las coincidencias
+// esto retorna un array con todas las coincidencias
+document.querySelectorAli(".nombre_clase")
+```
+#### ACCEDER, ACTUALIZAR CONTENIDO, CREAR Y REMOVER ATRIBUTOS
+una vez capturada el elemento con `querySelector` pueden hacer uso de `textContent` para acceder al contenido del elemento, de esta mismo forma podemos editar o ocultar el contenido `textConten="hola"` esto lo que es actualizar el contenido anterio con el contenido que se le esta asignando.
+`textCaonten` solo se usa si deseamos agregar contenido de tipo texto, si deseamos setear o agregar contenido de tipo `html` se deber usar `innerHTML`
+```js
+//<p id="text">este es un contenido</p>
+let etiquetaP=document.querySelection("#text")
+console.log(etiquetaP.textContent)
+//este es un contenido
+etiquetaP.textContent="nuevo texto"
+console.log(etiquetaP.textContent)
+// muevo texto
+
+//<div id="contenedor"></div>
+let div=document.querySelector("#contenedor")
+div.innerHTML="<p>arrafo</p>"> este es un
+
+```
+Una vez conocido la forma de capturar elementos `html` y la forma de setear contenido (`textContent`) y html (`innerHTML`), tambien podemos setear atributos y removerlos.
+```js
+//<div>contenido</div>
+//data-description
+let contenido=document.querySelector("#contenido")
+//entre parentesis van dos parametros primero el nombre del atributo a crear y segundo el valor que debe tener.
+contenido.setAttribute()
+//<div id="contenido" data-description="valor de mi data-description">contenido</div>
+
+//eliminar el atributo creado
+//entre parentesis el nombre del atributo que se va eliminar
+contenido.removeAttribute("data-description")
+```
+#### AGREGAR Y ELIMINAR ELEMENTOS
+para crear un nuevo elemento no necesitamos capturar un elemento por que crearemos un elemento  nuevo.
+```js
+let nuevoEtiquetaP=document.createElement("p")
+// agregar contenido a mi nueva etiqueta
+nuevoEtiquetaP.textContent="informacion en el parrafo"
+
+//para que esta informacion aparezca de manera visible en mi html debemos agregarlo a un elemento padre.
+/*
+<body>
+</body>
+*/
+let body=document.querySelector("body")
+// hacer uso del metodo que me permite asignarle nuevos hijos
+body.appendChild(nuevoEtiquetaP)
+
+//deseo eliminar ese elemento que acabo de crear
+// usamos el nombre del elemento a eliminar y luego usamos el metodo remove()
+nuevoEtiquetaP.remove()
+```
+
+#### MODIFICAR CLASES Y ESTILOS.
+estos metodos que veremos a continuacion nos permite cambiar de manera interactiva los estilos  css que se puedan aplicar a ciertos elementos pero haciendo uso de javascript y logrando sus cambios de estilo de manera dinamica.
+- archivo**index.html**
+```html
+<!DOCTYPE html head -->
+<body>
+  <section id="principal"></section>
+</body>
+<!--/html-->
+```
+- archivo **style.css**
+```css
+.color-fondo-rojo{
+  background-color:red;
+}
+```
+
+- archivo **script.js**
+```js
+// agregar a mi section el fondo rojo
+let section=document,querySelector("#peincipal")
+section.classList.add("color-fondo-rojo")
+//eliminar la clase
+section.classList.remover("color-fondo-rojo")
+
+// crear estilos directamente
+section.style.backgroundColor="red"
+```
+### EVENTOS (tarea-averiguar)
+
