@@ -12,5 +12,25 @@ let alumno={
 }
 alumno["dni"]=23456789
 //spread opation...
-let actualizaAlumno={...alumno,"t_sangre":"b+"}
-actualizaAlumno
+let actualizaAlumno={"id":1,...alumno,"t_sangre":"b+"}
+let {nombre, t_sangre}=actualizaAlumno
+nombre
+t_sangre
+
+//agregar con el operador spread las tareas faltantes de las vocales
+//primera forma
+let vocales=['a','e']
+let vocalesFaltantes=['i','o','u']
+let unirVocales=[...vocales,...vocalesFaltantes]
+unirVocales
+// segunda forma
+let conpletaVocales=[...vocales,'i','o','u']
+conpletaVocales
+// tercera form
+let [firtsVocals,secondsVocales]=['a','e']
+let vocalesCompletas=[firtsVocals,secondsVocales,'i','o','u']
+vocalesCompletas
+
+let texto="hola como estan alumnos"
+let nuevaLista=[...texto]
+nuevaLista

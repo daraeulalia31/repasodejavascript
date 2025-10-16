@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazme Click</title>
+    <style>
+        h1{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 onclick="alert(`hiciste click en h1`)">Hola soy un titulo</h1>
+    <p>este es un parrafo descriptivo</p>
+    <button onclick="alert(`me hiciste click`)">Hasme Click</button>
+    <h2>ejecutando evento desde una funcion externa</h2>
+    <input type="text" id="text_usuario" placeholder="escribe algo">
+    <button onclick="miFuncion()">Hasme otro click aqui abajo</button>
+    
+    <script>
+        function miFuncion(){
+            const etiquetaP=document.querySelector("#text_usuario")
+            const contenidoP=etiquetaP.value
+            alert(contenidoP)
+            }
+    </script>
+</body>
+</html>

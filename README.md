@@ -413,7 +413,7 @@ estos metodos que veremos a continuacion nos permite cambiar de manera interacti
   background-color:red;
 }
 ```
-
+**
 - archivo **script.js**
 ```js
 // agregar a mi section el fondo rojo
@@ -426,4 +426,36 @@ section.classList.remover("color-fondo-rojo")
 section.style.backgroundColor="red"
 ```
 ### EVENTOS (tarea-averiguar)
+existen situaciones en las que necesitamos realizar una accion **cuando ocurra un determinado caso**, esto se puede trabajar con un `estructura de decision` o puedo trabajar con un `estructura de reparticion(bucle)`.
+esto se puede manejar de esta manera cuando sabemos que es lo que tiene que suceder.
+existen situaciones en las que sabemos exactamente cuando tenemos que activar nuestra funcionalidad, por ejemplo, no podemos predecir **cuando** un usuario de nuestra pagina hara click en un boton, o en que momento reproducira una cancion o lo pausara, es esta situacion
+es cuando tenemos que manejar  la funcionalidad a travez de **eventos**.
+
+#### Que es un envento 
+Un evento es una notificacion de una caracteristica que acaba de suceder.
+O es la ejecucion de una funcionalidad 
+Veamos algunos ejemplos de eventos clasicos
+- Evento `click`
+- Evento `keydown`: pulsamos una tecla 
+- Evento `play`
+- Evento `Wheel`:scroll con la rueda del raton
+- Evento `beforeprint`: cuando el usuario activa la funcion de imprimir 
+**Tenemos dos maneras de manejar los eventos**
+### 1. Eventos desde Html`
+"Podemos escuchar los eventos a travez de atributos de un elemento Html.
+**index.html**
+```html
+<button onclick="alert(`hola`)">Saludar</button>
+```
+***Script.js**
+```js
+
+```
+### 2. Eventos desde JavaScript
+la opcion **recomendada** manejar los eventos desde ficheros (archivo) `.js`
+esto evita tener nombres sueltos de funciones en html que luego tendremos que actualizar y mantener.
+#### captura evento , metodo addEventListener
+este metodo recibe dos parametros , el vento y la funcion a ejecutar.
+para conocimiento el metodo `addEventListener(event,func)`,
+es una funcion que se comporta como una funcion de tipo `callback`.
 
